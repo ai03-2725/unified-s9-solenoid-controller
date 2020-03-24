@@ -15,17 +15,6 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L solenoid-driver-rescue:ULN2003 U2
-U 1 1 533CF28C
-P 5650 4700
-F 0 "U2" H 5650 4800 70  0000 C CNN
-F 1 "ULN2003" H 5650 4400 70  0000 C CNN
-F 2 "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm" H 5650 4700 60  0000 C CNN
-F 3 "" H 5650 4700 60  0000 C CNN
-	1    5650 4700
-	1    0    0    -1  
-$EndComp
-$Comp
 L solenoid-driver-rescue:R R3
 U 1 1 533DE0E6
 P 7050 4300
@@ -42,7 +31,7 @@ U 1 1 533DE17A
 P 6550 4300
 F 0 "D2" H 6550 4400 50  0000 C CNN
 F 1 "Actuating" H 6550 4200 50  0000 C CNN
-F 2 "~" H 6550 4300 60  0000 C CNN
+F 2 "LED_THT:LED_D3.0mm" H 6550 4300 60  0000 C CNN
 F 3 "~" H 6550 4300 60  0000 C CNN
 	1    6550 4300
 	-1   0    0    1   
@@ -591,23 +580,23 @@ Wire Wire Line
 Wire Wire Line
 	2825 3250 3200 3250
 $Comp
-L Connector_Generic:Conn_01x03 J?
+L Connector_Generic:Conn_01x03 J1
 U 1 1 5E7C9766
 P 3275 4600
-F 0 "J?" H 3193 4275 50  0000 C CNN
+F 0 "J1" H 3193 4275 50  0000 C CNN
 F 1 "Conn_01x03" H 3193 4366 50  0000 C CNN
-F 2 "" H 3275 4600 50  0001 C CNN
+F 2 "random-keyboard-parts:JST-SR-3" H 3275 4600 50  0001 C CNN
 F 3 "~" H 3275 4600 50  0001 C CNN
 	1    3275 4600
 	-1   0    0    1   
 $EndComp
 Text GLabel 3475 4600 2    50   Input ~ 0
-SIGNAL'
+SIGNAL
 $Comp
-L power:+5V #PWR?
+L power:+5V #PWR0101
 U 1 1 5E7CB7F0
 P 3650 4500
-F 0 "#PWR?" H 3650 4350 50  0001 C CNN
+F 0 "#PWR0101" H 3650 4350 50  0001 C CNN
 F 1 "+5V" H 3665 4673 50  0000 C CNN
 F 2 "" H 3650 4500 50  0001 C CNN
 F 3 "" H 3650 4500 50  0001 C CNN
@@ -617,10 +606,10 @@ $EndComp
 Wire Wire Line
 	3650 4500 3475 4500
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0102
 U 1 1 5E7CDEDA
 P 3650 4700
-F 0 "#PWR?" H 3650 4450 50  0001 C CNN
+F 0 "#PWR0102" H 3650 4450 50  0001 C CNN
 F 1 "GND" H 3655 4527 50  0000 C CNN
 F 2 "" H 3650 4700 50  0001 C CNN
 F 3 "" H 3650 4700 50  0001 C CNN
@@ -635,10 +624,10 @@ Wire Wire Line
 	4400 4300 4950 4300
 Connection ~ 4950 4300
 $Comp
-L Connector_Generic:Conn_01x02 J?
+L Connector_Generic:Conn_01x02 J2
 U 1 1 5E7D9A18
 P 6900 4800
-F 0 "J?" H 6980 4792 50  0000 L CNN
+F 0 "J2" H 6980 4792 50  0000 L CNN
 F 1 "SOLENOID" H 6980 4701 50  0000 L CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 6900 4800 50  0001 C CNN
 F 3 "~" H 6900 4800 50  0001 C CNN
@@ -647,4 +636,63 @@ F 3 "~" H 6900 4800 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	6700 4700 6700 4800
+$Comp
+L Connector_Generic:Conn_01x01 MH1
+U 1 1 5E804DB7
+P 9125 4475
+F 0 "MH1" H 9205 4517 50  0000 L CNN
+F 1 "Conn_01x01" H 9205 4426 50  0000 L CNN
+F 2 "random-keyboard-parts:Generic-Mounthole" H 9125 4475 50  0001 C CNN
+F 3 "~" H 9125 4475 50  0001 C CNN
+	1    9125 4475
+	1    0    0    -1  
+$EndComp
+NoConn ~ 8925 4475
+$Comp
+L Connector_Generic:Conn_01x01 MH2
+U 1 1 5E80A074
+P 9125 4650
+F 0 "MH2" H 9205 4692 50  0000 L CNN
+F 1 "Conn_01x01" H 9205 4601 50  0000 L CNN
+F 2 "random-keyboard-parts:Generic-Mounthole" H 9125 4650 50  0001 C CNN
+F 3 "~" H 9125 4650 50  0001 C CNN
+	1    9125 4650
+	1    0    0    -1  
+$EndComp
+NoConn ~ 8925 4650
+$Comp
+L Connector_Generic:Conn_01x01 MH3
+U 1 1 5E80C532
+P 9125 4825
+F 0 "MH3" H 9205 4867 50  0000 L CNN
+F 1 "Conn_01x01" H 9205 4776 50  0000 L CNN
+F 2 "random-keyboard-parts:Generic-Mounthole" H 9125 4825 50  0001 C CNN
+F 3 "~" H 9125 4825 50  0001 C CNN
+	1    9125 4825
+	1    0    0    -1  
+$EndComp
+NoConn ~ 8925 4825
+$Comp
+L Connector_Generic:Conn_01x01 MH4
+U 1 1 5E80C539
+P 9125 5000
+F 0 "MH4" H 9205 5042 50  0000 L CNN
+F 1 "Conn_01x01" H 9205 4951 50  0000 L CNN
+F 2 "random-keyboard-parts:Generic-Mounthole" H 9125 5000 50  0001 C CNN
+F 3 "~" H 9125 5000 50  0001 C CNN
+	1    9125 5000
+	1    0    0    -1  
+$EndComp
+NoConn ~ 8925 5000
+$Comp
+L solenoid-driver-rescue:ULN2003 U2
+U 1 1 533CF28C
+P 5650 4700
+F 0 "U2" H 5650 4800 70  0000 C CNN
+F 1 "ULN2003" H 5650 4400 70  0000 C CNN
+F 2 "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm" H 5650 4700 60  0000 C CNN
+F 3 "" H 5650 4700 60  0000 C CNN
+	1    5650 4700
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
