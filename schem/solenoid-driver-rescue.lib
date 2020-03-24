@@ -1,54 +1,11 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
-# power_+5V
+# C
 #
-DEF power_+5V #PWR 0 0 Y Y 1 F P
-F0 "#PWR" 0 -150 50 H I C CNN
-F1 "power_+5V" 0 140 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-DRAW
-P 2 0 1 0 -30 50 0 100 N
-P 2 0 1 0 0 0 0 100 N
-P 2 0 1 0 0 100 30 50 N
-X +5V 1 0 0 0 U 50 50 1 1 W N
-ENDDRAW
-ENDDEF
-#
-# power_+9V
-#
-DEF power_+9V #PWR 0 0 Y Y 1 F P
-F0 "#PWR" 0 -150 50 H I C CNN
-F1 "power_+9V" 0 140 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-DRAW
-P 2 0 1 0 -30 50 0 100 N
-P 2 0 1 0 0 0 0 100 N
-P 2 0 1 0 0 100 30 50 N
-X +9V 1 0 0 0 U 50 50 1 1 W N
-ENDDRAW
-ENDDEF
-#
-# power_PWR_FLAG
-#
-DEF power_PWR_FLAG #FLG 0 0 N N 1 F P
-F0 "#FLG" 0 75 50 H I C CNN
-F1 "power_PWR_FLAG" 0 150 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-DRAW
-P 6 0 1 0 0 0 0 50 -40 75 0 100 40 75 0 50 N
-X pwr 1 0 0 0 U 50 50 0 0 w
-ENDDRAW
-ENDDEF
-#
-# solenoid-driver-rescue_C
-#
-DEF solenoid-driver-rescue_C C 0 10 N Y 1 F N
+DEF C C 0 10 N Y 1 F N
 F0 "C" 0 100 40 H V L CNN
-F1 "solenoid-driver-rescue_C" 6 -85 40 H V L CNN
+F1 "C" 6 -85 40 H V L CNN
 F2 "" 38 -150 30 H V C CNN
 F3 "" 0 0 60 H V C CNN
 $FPLIST
@@ -64,11 +21,11 @@ X ~ 2 0 -200 170 U 40 40 1 1 P
 ENDDRAW
 ENDDEF
 #
-# solenoid-driver-rescue_CONN_1
+# CONN_1
 #
-DEF solenoid-driver-rescue_CONN_1 P 0 30 N N 1 F N
+DEF CONN_1 P 0 30 N N 1 F N
 F0 "P" 80 0 40 H V L CNN
-F1 "solenoid-driver-rescue_CONN_1" 0 55 30 H I C CNN
+F1 "CONN_1" 0 55 30 H I C CNN
 F2 "" 0 0 60 H V C CNN
 F3 "" 0 0 60 H V C CNN
 DRAW
@@ -78,11 +35,11 @@ X 1 1 -150 0 100 R 60 60 1 1 P
 ENDDRAW
 ENDDEF
 #
-# solenoid-driver-rescue_CONN_2
+# CONN_2
 #
-DEF solenoid-driver-rescue_CONN_2 P 0 40 Y N 1 F N
+DEF CONN_2 P 0 40 Y N 1 F N
 F0 "P" -50 0 40 V V C CNN
-F1 "solenoid-driver-rescue_CONN_2" 50 0 40 V V C CNN
+F1 "CONN_2" 50 0 40 V V C CNN
 F2 "" 0 0 60 H V C CNN
 F3 "" 0 0 60 H V C CNN
 DRAW
@@ -92,11 +49,11 @@ X PM 2 -350 -100 250 R 60 60 1 1 P I
 ENDDRAW
 ENDDEF
 #
-# solenoid-driver-rescue_CONN_3X2
+# CONN_3X2
 #
-DEF solenoid-driver-rescue_CONN_3X2 P 0 40 Y N 1 F N
+DEF CONN_3X2 P 0 40 Y N 1 F N
 F0 "P" 0 250 50 H V C CNN
-F1 "solenoid-driver-rescue_CONN_3X2" 0 50 40 V V C CNN
+F1 "CONN_3X2" 0 50 40 V V C CNN
 F2 "" 0 0 60 H V C CNN
 F3 "" 0 0 60 H V C CNN
 DRAW
@@ -110,11 +67,11 @@ X 6 6 400 -50 300 L 60 60 1 1 P I
 ENDDRAW
 ENDDEF
 #
-# solenoid-driver-rescue_CP
+# CP
 #
-DEF solenoid-driver-rescue_CP C 0 10 N N 1 F N
+DEF CP C 0 10 N N 1 F N
 F0 "C" 50 100 40 H V L CNN
-F1 "solenoid-driver-rescue_CP" 50 -100 40 H V L CNN
+F1 "CP" 50 -100 40 H V L CNN
 F2 "" 100 -150 30 H V C CNN
 F3 "" 0 0 300 H V C CNN
 $FPLIST
@@ -129,11 +86,11 @@ X ~ 2 0 -200 150 U 40 40 1 1 P
 ENDDRAW
 ENDDEF
 #
-# solenoid-driver-rescue_DIODESCH
+# DIODESCH
 #
-DEF solenoid-driver-rescue_DIODESCH D 0 40 N N 1 F N
+DEF DIODESCH D 0 40 N N 1 F N
 F0 "D" 0 100 40 H V C CNN
-F1 "solenoid-driver-rescue_DIODESCH" 0 -100 40 H V C CNN
+F1 "DIODESCH" 0 -100 40 H V C CNN
 F2 "" 0 0 60 H V C CNN
 F3 "" 0 0 60 H V C CNN
 $FPLIST
@@ -148,11 +105,11 @@ X K 2 200 0 150 L 40 40 1 1 P
 ENDDRAW
 ENDDEF
 #
-# solenoid-driver-rescue_GND
+# GND
 #
-DEF solenoid-driver-rescue_GND #PWR 0 0 Y Y 1 F P
+DEF GND #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 0 0 30 H I C CNN
-F1 "solenoid-driver-rescue_GND" 0 -70 30 H I C CNN
+F1 "GND" 0 -70 30 H I C CNN
 F2 "" 0 0 60 H V C CNN
 F3 "" 0 0 60 H V C CNN
 DRAW
@@ -161,11 +118,11 @@ X GND 1 0 0 0 U 30 30 1 1 W N
 ENDDRAW
 ENDDEF
 #
-# solenoid-driver-rescue_INDUCTOR_SMALL
+# INDUCTOR_SMALL
 #
-DEF solenoid-driver-rescue_INDUCTOR_SMALL L 0 0 N N 1 F N
+DEF INDUCTOR_SMALL L 0 0 N N 1 F N
 F0 "L" 0 100 50 H V C CNN
-F1 "solenoid-driver-rescue_INDUCTOR_SMALL" 0 -50 50 H V C CNN
+F1 "INDUCTOR_SMALL" 0 -50 50 H V C CNN
 F2 "" 0 0 60 H V C CNN
 F3 "" 0 0 60 H V C CNN
 DRAW
@@ -178,11 +135,11 @@ X 2 2 250 0 50 L 30 30 1 1 I
 ENDDRAW
 ENDDEF
 #
-# solenoid-driver-rescue_LED
+# LED
 #
-DEF solenoid-driver-rescue_LED D 0 40 Y N 1 F N
+DEF LED D 0 40 Y N 1 F N
 F0 "D" 0 100 50 H V C CNN
-F1 "solenoid-driver-rescue_LED" 0 -100 50 H V C CNN
+F1 "LED" 0 -100 50 H V C CNN
 F2 "" 0 0 60 H V C CNN
 F3 "" 0 0 60 H V C CNN
 $FPLIST
@@ -204,11 +161,11 @@ X K 2 200 0 150 L 40 40 1 1 P
 ENDDRAW
 ENDDEF
 #
-# solenoid-driver-rescue_MIC2009A
+# MIC2009A
 #
-DEF solenoid-driver-rescue_MIC2009A U 0 40 Y Y 1 F N
+DEF MIC2009A U 0 40 Y Y 1 F N
 F0 "U" -250 250 60 H V L CNN
-F1 "solenoid-driver-rescue_MIC2009A" 0 -250 60 H V C CNN
+F1 "MIC2009A" 0 -250 60 H V C CNN
 F2 "" -50 0 60 H V C CNN
 F3 "" -50 0 60 H V C CNN
 DRAW
@@ -222,11 +179,11 @@ X VOUT 6 600 100 300 L 50 50 1 1 w
 ENDDRAW
 ENDDEF
 #
-# solenoid-driver-rescue_MIC2250
+# MIC2250
 #
-DEF solenoid-driver-rescue_MIC2250 U 0 40 Y Y 1 F N
+DEF MIC2250 U 0 40 Y Y 1 F N
 F0 "U" -250 250 60 H V L CNN
-F1 "solenoid-driver-rescue_MIC2250" 0 -250 60 H V C CNN
+F1 "MIC2250" 0 -250 60 H V C CNN
 F2 "" -50 0 60 H V C CNN
 F3 "" -50 0 60 H V C CNN
 DRAW
@@ -239,11 +196,11 @@ X VIN 5 600 100 300 L 50 50 1 1 W
 ENDDRAW
 ENDDEF
 #
-# solenoid-driver-rescue_R
+# R
 #
-DEF solenoid-driver-rescue_R R 0 0 N Y 1 F N
+DEF R R 0 0 N Y 1 F N
 F0 "R" 80 0 40 V V C CNN
-F1 "solenoid-driver-rescue_R" 7 1 40 V V C CNN
+F1 "R" 7 1 40 V V C CNN
 F2 "" -70 0 30 V V C CNN
 F3 "" 0 0 30 H V C CNN
 $FPLIST
@@ -260,11 +217,11 @@ X ~ 2 0 -250 100 U 60 60 1 1 P
 ENDDRAW
 ENDDEF
 #
-# solenoid-driver-rescue_ULN2003
+# ULN2003
 #
-DEF solenoid-driver-rescue_ULN2003 U 0 40 Y Y 1 F N
+DEF ULN2003 U 0 40 Y Y 1 F N
 F0 "U" 0 100 70 H V C CNN
-F1 "solenoid-driver-rescue_ULN2003" 0 -100 70 H V C CNN
+F1 "ULN2003" 0 -100 70 H V C CNN
 F2 "" 0 0 60 H V C CNN
 F3 "" 0 0 60 H V C CNN
 DRAW

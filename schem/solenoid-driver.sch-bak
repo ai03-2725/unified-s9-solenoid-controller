@@ -1,6 +1,37 @@
-EESchema Schematic File Version 4
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:special
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:micrel
 LIBS:solenoid-driver-cache
-EELAYER 30 0
+EELAYER 27 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -15,7 +46,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L solenoid-driver-rescue:CONN_3X2 P1
+L CONN_3X2 P1
 U 1 1 533CF06C
 P 2350 4350
 F 0 "P1" H 2350 4600 50  0000 C CNN
@@ -26,7 +57,7 @@ F 3 "~" H 2350 4350 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L solenoid-driver-rescue:GND #PWR01
+L GND #PWR01
 U 1 1 533CF0AA
 P 2800 4450
 F 0 "#PWR01" H 2800 4450 30  0001 C CNN
@@ -37,7 +68,7 @@ F 3 "" H 2800 4450 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+5V #PWR02
+L +5V #PWR02
 U 1 1 533CF0E2
 P 1900 4150
 F 0 "#PWR02" H 1900 4240 20  0001 C CNN
@@ -50,7 +81,7 @@ $EndComp
 NoConn ~ 1950 4300
 NoConn ~ 1950 4400
 $Comp
-L solenoid-driver-rescue:ULN2003 U2
+L ULN2003 U2
 U 1 1 533CF28C
 P 5650 4700
 F 0 "U2" H 5650 4800 70  0000 C CNN
@@ -61,7 +92,7 @@ F 3 "" H 5650 4700 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L solenoid-driver-rescue:CONN_2 P3
+L CONN_2 P3
 U 1 1 533CF848
 P 7050 4800
 F 0 "P3" V 7000 4800 40  0000 C CNN
@@ -72,7 +103,7 @@ F 3 "~" H 7050 4800 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L solenoid-driver-rescue:R R3
+L R R3
 U 1 1 533DE0E6
 P 7050 4300
 F 0 "R3" V 7130 4300 40  0000 C CNN
@@ -83,7 +114,7 @@ F 3 "~" H 7050 4300 30  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L solenoid-driver-rescue:LED D2
+L LED D2
 U 1 1 533DE17A
 P 6550 4300
 F 0 "D2" H 6550 4400 50  0000 C CNN
@@ -94,7 +125,7 @@ F 3 "~" H 6550 4300 60  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L solenoid-driver-rescue:C C2
+L C C2
 U 1 1 533DEA52
 P 2450 2700
 F 0 "C2" H 2450 2800 40  0000 L CNN
@@ -105,7 +136,7 @@ F 3 "~" H 2450 2700 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L solenoid-driver-rescue:GND #PWR03
+L GND #PWR03
 U 1 1 533DEA61
 P 3350 2650
 F 0 "#PWR03" H 3350 2650 30  0001 C CNN
@@ -116,7 +147,7 @@ F 3 "" H 3350 2650 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L solenoid-driver-rescue:C C4
+L C C4
 U 1 1 533DEC04
 P 6350 5350
 F 0 "C4" H 6350 5450 40  0000 L CNN
@@ -127,7 +158,7 @@ F 3 "~" H 6350 5350 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L solenoid-driver-rescue:GND #PWR04
+L GND #PWR04
 U 1 1 533DECA2
 P 6350 5600
 F 0 "#PWR04" H 6350 5600 30  0001 C CNN
@@ -138,7 +169,7 @@ F 3 "" H 6350 5600 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L solenoid-driver-rescue:MIC2009A U1
+L MIC2009A U1
 U 1 1 533F8E11
 P 3950 2650
 F 0 "U1" H 3700 2900 60  0000 L CNN
@@ -149,7 +180,7 @@ F 3 "~" H 3900 2650 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L solenoid-driver-rescue:GND #PWR05
+L GND #PWR05
 U 1 1 533F902C
 P 2300 3000
 F 0 "#PWR05" H 2300 3000 30  0001 C CNN
@@ -160,7 +191,7 @@ F 3 "" H 2300 3000 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L solenoid-driver-rescue:R R1
+L R R1
 U 1 1 533F92D7
 P 4650 3100
 F 0 "R1" V 4730 3100 40  0000 C CNN
@@ -171,7 +202,7 @@ F 3 "~" H 4650 3100 30  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L solenoid-driver-rescue:GND #PWR06
+L GND #PWR06
 U 1 1 533F94C7
 P 4650 3350
 F 0 "#PWR06" H 4650 3350 30  0001 C CNN
@@ -182,7 +213,7 @@ F 3 "" H 4650 3350 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L solenoid-driver-rescue:R R2
+L R R2
 U 1 1 533F9579
 P 5450 3050
 F 0 "R2" V 5530 3050 40  0000 C CNN
@@ -193,7 +224,7 @@ F 3 "~" H 5450 3050 30  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+5V #PWR07
+L +5V #PWR07
 U 1 1 533F9617
 P 5450 2750
 F 0 "#PWR07" H 5450 2840 20  0001 C CNN
@@ -204,7 +235,7 @@ F 3 "" H 5450 2750 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L solenoid-driver-rescue:MIC2250 U3
+L MIC2250 U3
 U 1 1 533F9B43
 P 6950 2650
 F 0 "U3" H 7100 2900 60  0000 L CNN
@@ -215,7 +246,7 @@ F 3 "" H 6900 2650 60  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L solenoid-driver-rescue:C C1
+L C C1
 U 1 1 533F9B5C
 P 2150 2700
 F 0 "C1" H 2150 2800 40  0000 L CNN
@@ -226,7 +257,7 @@ F 3 "~" H 2150 2700 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+5V #PWR08
+L +5V #PWR08
 U 1 1 533F9C87
 P 2300 2400
 F 0 "#PWR08" H 2300 2490 20  0001 C CNN
@@ -237,7 +268,7 @@ F 3 "" H 2300 2400 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L solenoid-driver-rescue:C C3
+L C C3
 U 1 1 533F9FEC
 P 6100 2850
 F 0 "C3" H 6100 2950 40  0000 L CNN
@@ -248,7 +279,7 @@ F 3 "~" H 6100 2850 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L solenoid-driver-rescue:GND #PWR09
+L GND #PWR09
 U 1 1 533FA03C
 P 7550 2650
 F 0 "#PWR09" H 7550 2650 30  0001 C CNN
@@ -259,7 +290,7 @@ F 3 "" H 7550 2650 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L solenoid-driver-rescue:GND #PWR010
+L GND #PWR010
 U 1 1 533FA249
 P 6100 3050
 F 0 "#PWR010" H 6100 3050 30  0001 C CNN
@@ -270,7 +301,7 @@ F 3 "" H 6100 3050 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L solenoid-driver-rescue:INDUCTOR_SMALL L1
+L INDUCTOR_SMALL L1
 U 1 1 533FA306
 P 6950 2200
 F 0 "L1" H 6950 2300 50  0000 C CNN
@@ -281,7 +312,7 @@ F 3 "~" H 6950 2200 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L solenoid-driver-rescue:DIODESCH D1
+L DIODESCH D1
 U 1 1 533FA643
 P 7850 2550
 F 0 "D1" H 7850 2650 40  0000 C CNN
@@ -292,7 +323,7 @@ F 3 "~" H 7850 2550 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L solenoid-driver-rescue:R R4
+L R R4
 U 1 1 533FAAD3
 P 8100 2850
 F 0 "R4" V 8180 2850 40  0000 C CNN
@@ -303,7 +334,7 @@ F 3 "~" H 8100 2850 30  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L solenoid-driver-rescue:R R5
+L R R5
 U 1 1 533FAB2E
 P 8100 3450
 F 0 "R5" V 8180 3450 40  0000 C CNN
@@ -314,7 +345,7 @@ F 3 "~" H 8100 3450 30  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L solenoid-driver-rescue:GND #PWR011
+L GND #PWR011
 U 1 1 533FACEA
 P 8100 3700
 F 0 "#PWR011" H 8100 3700 30  0001 C CNN
@@ -325,7 +356,7 @@ F 3 "" H 8100 3700 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L solenoid-driver-rescue:C C5
+L C C5
 U 1 1 533FADC1
 P 8350 2800
 F 0 "C5" H 8350 2900 40  0000 L CNN
@@ -336,7 +367,7 @@ F 3 "~" H 8350 2800 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L solenoid-driver-rescue:GND #PWR012
+L GND #PWR012
 U 1 1 533FAE17
 P 8350 3000
 F 0 "#PWR012" H 8350 3000 30  0001 C CNN
@@ -347,7 +378,7 @@ F 3 "" H 8350 3000 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L solenoid-driver-rescue:CP C6
+L CP C6
 U 1 1 533FB030
 P 8650 2800
 F 0 "C6" H 8700 2900 40  0000 L CNN
@@ -358,7 +389,7 @@ F 3 "~" H 8650 2800 300 0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L solenoid-driver-rescue:GND #PWR013
+L GND #PWR013
 U 1 1 533FB185
 P 8650 3000
 F 0 "#PWR013" H 8650 3000 30  0001 C CNN
@@ -375,7 +406,7 @@ Current limiter set to\n320--560mA, typically\n430mA.
 Text Notes 6500 3050 0    39   ~ 0
 MIC2250-2 version has frequency\ndithering to reduce EMI.
 $Comp
-L power:PWR_FLAG #FLG014
+L PWR_FLAG #FLG014
 U 1 1 533FB7F8
 P 1650 4150
 F 0 "#FLG014" H 1650 4245 30  0001 C CNN
@@ -386,7 +417,7 @@ F 3 "" H 1650 4150 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:PWR_FLAG #FLG015
+L PWR_FLAG #FLG015
 U 1 1 533FBA37
 P 2950 4450
 F 0 "#FLG015" H 2950 4545 30  0001 C CNN
@@ -397,7 +428,7 @@ F 3 "" H 2950 4450 60  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L power:PWR_FLAG #FLG016
+L PWR_FLAG #FLG016
 U 1 1 533FBB83
 P 9150 2500
 F 0 "#FLG016" H 9150 2595 30  0001 C CNN
@@ -408,7 +439,7 @@ F 3 "" H 9150 2500 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+9V #PWR017
+L +9V #PWR017
 U 1 1 5340AEE5
 P 8950 2500
 F 0 "#PWR017" H 8950 2470 20  0001 C CNN
@@ -419,7 +450,7 @@ F 3 "" H 8950 2500 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+9V #PWR018
+L +9V #PWR018
 U 1 1 5340AEF4
 P 6700 4700
 F 0 "#PWR018" H 6700 4670 20  0001 C CNN
@@ -430,7 +461,7 @@ F 3 "" H 6700 4700 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+9V #PWR019
+L +9V #PWR019
 U 1 1 5340AF03
 P 7300 4300
 F 0 "#PWR019" H 7300 4270 20  0001 C CNN
@@ -441,7 +472,7 @@ F 3 "" H 7300 4300 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+9V #PWR020
+L +9V #PWR020
 U 1 1 5340B0FB
 P 6350 5050
 F 0 "#PWR020" H 6350 5020 20  0001 C CNN
@@ -454,13 +485,13 @@ $EndComp
 Wire Wire Line
 	1900 4150 1900 4200
 Wire Wire Line
-	1650 4200 1900 4200
+	1650 4200 1950 4200
 Wire Wire Line
-	2750 4400 2800 4400
+	2750 4400 3000 4400
 Wire Wire Line
 	2800 4400 2800 4450
 Wire Wire Line
-	4950 4300 4950 4400
+	4950 4300 4950 4900
 Wire Wire Line
 	4950 4900 5000 4900
 Wire Wire Line
@@ -493,7 +524,7 @@ Wire Wire Line
 	6350 4800 6300 4800
 Connection ~ 4950 4300
 Wire Wire Line
-	6350 5050 6350 5100
+	6350 5050 6350 5150
 Wire Wire Line
 	6300 5100 6350 5100
 Connection ~ 6350 5100
@@ -502,7 +533,7 @@ Wire Wire Line
 Wire Wire Line
 	3200 2550 3350 2550
 Wire Wire Line
-	2150 2450 2300 2450
+	2150 2450 3200 2450
 Wire Wire Line
 	2450 2450 2450 2500
 Wire Wire Line
@@ -520,14 +551,14 @@ Connection ~ 2300 2450
 Wire Wire Line
 	2150 2900 2150 2950
 Wire Wire Line
-	2150 2950 2300 2950
+	2150 2950 2450 2950
 Wire Wire Line
 	2300 2950 2300 3000
 Wire Wire Line
 	2450 2950 2450 2900
 Connection ~ 2300 2950
 Wire Wire Line
-	4550 2550 6100 2550
+	4550 2550 6350 2550
 Wire Wire Line
 	6100 2550 6100 2650
 Wire Wire Line
@@ -536,18 +567,18 @@ Wire Wire Line
 	6300 2200 6700 2200
 Connection ~ 6300 2550
 Wire Wire Line
-	7550 2550 7600 2550
+	7550 2550 7650 2550
 Wire Wire Line
 	7600 2550 7600 2200
 Wire Wire Line
 	7600 2200 7200 2200
 Connection ~ 7600 2550
 Wire Wire Line
-	8050 2550 8100 2550
+	8050 2550 9150 2550
 Wire Wire Line
 	8100 2550 8100 2600
 Wire Wire Line
-	8100 3100 8100 3150
+	8100 3100 8100 3200
 Wire Wire Line
 	8100 3150 7600 3150
 Wire Wire Line
@@ -577,17 +608,17 @@ Connection ~ 8950 2550
 Wire Wire Line
 	3200 2450 3200 2550
 Wire Wire Line
-	2750 4300 4950 4300
+	2750 4300 5000 4300
 Wire Wire Line
-	3000 2750 3300 2750
+	3000 2750 3350 2750
 Wire Wire Line
 	3300 2750 3300 4200
 Wire Wire Line
 	3300 4200 2750 4200
 Wire Wire Line
-	6350 4400 6350 4500
+	6350 4400 6350 4900
 Wire Wire Line
-	6300 4900 6350 4900
+	6300 4900 6700 4900
 Connection ~ 6350 4800
 Connection ~ 6350 4900
 Wire Wire Line
@@ -599,7 +630,7 @@ Text Label 4750 2550 0    39   ~ 0
 Text Label 7350 2200 0    39   ~ 0
 SW
 $Comp
-L solenoid-driver-rescue:CONN_1 P4
+L CONN_1 P4
 U 1 1 5340C7FE
 P 3150 4400
 F 0 "P4" H 3230 4400 40  0000 L CNN
@@ -611,7 +642,7 @@ F 3 "~" H 3150 4400 60  0000 C CNN
 $EndComp
 Connection ~ 2950 4400
 $Comp
-L solenoid-driver-rescue:R R6
+L R R6
 U 1 1 536DB50B
 P 3000 3050
 F 0 "R6" V 3080 3050 40  0000 C CNN
@@ -625,7 +656,7 @@ Wire Wire Line
 	3000 2800 3000 2750
 Connection ~ 3300 2750
 $Comp
-L solenoid-driver-rescue:GND #PWR021
+L GND #PWR021
 U 1 1 536DB5BC
 P 3000 3300
 F 0 "#PWR021" H 3000 3300 30  0001 C CNN
@@ -636,7 +667,7 @@ F 3 "" H 3000 3300 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4850 3350 5450 3350
+	4850 3350 6300 3350
 Wire Wire Line
 	6300 3350 6300 2750
 Wire Wire Line
@@ -648,60 +679,4 @@ Wire Wire Line
 Wire Wire Line
 	5450 3300 5450 3350
 Connection ~ 5450 3350
-Wire Wire Line
-	4950 4800 4950 4900
-Wire Wire Line
-	4950 4700 4950 4800
-Wire Wire Line
-	4950 4600 4950 4700
-Wire Wire Line
-	4950 4500 4950 4600
-Wire Wire Line
-	4950 4400 4950 4500
-Wire Wire Line
-	6350 4500 6350 4600
-Wire Wire Line
-	6350 4600 6350 4700
-Wire Wire Line
-	6350 4700 6350 4800
-Wire Wire Line
-	4950 4300 5000 4300
-Wire Wire Line
-	6350 5100 6350 5150
-Wire Wire Line
-	2450 2450 3200 2450
-Wire Wire Line
-	2300 2450 2450 2450
-Wire Wire Line
-	2300 2950 2450 2950
-Wire Wire Line
-	6300 2550 6350 2550
-Wire Wire Line
-	7600 2550 7650 2550
-Wire Wire Line
-	8100 3150 8100 3200
-Wire Wire Line
-	8100 2550 8350 2550
-Wire Wire Line
-	8350 2550 8650 2550
-Wire Wire Line
-	8650 2550 8950 2550
-Wire Wire Line
-	6100 2550 6300 2550
-Wire Wire Line
-	1900 4200 1950 4200
-Wire Wire Line
-	2800 4400 2950 4400
-Wire Wire Line
-	8950 2550 9150 2550
-Wire Wire Line
-	6350 4800 6350 4900
-Wire Wire Line
-	6350 4900 6700 4900
-Wire Wire Line
-	2950 4400 3000 4400
-Wire Wire Line
-	3300 2750 3350 2750
-Wire Wire Line
-	5450 3350 6300 3350
 $EndSCHEMATC
