@@ -2,7 +2,7 @@
 
 ![Solenoid Driver](https://github.com/ai03-2725/9V-solenoid-controller/blob/master/img/Screenshot_3.png?raw=true)
 
-**Note:** Not yet confirmed functional or tested. Proceed at your own risk.
+**Note:** Prototype not confirmed functional. Please modify to function before producing.
 
 Based on [Xwhatit's work](https://geekhack.org/index.php?topic=58192), modified to work natively through QMK's haptic feedback/solenoid implementation.  
 Open-source and extremely compacted to be easily implementable by custom keyboard designers.  
